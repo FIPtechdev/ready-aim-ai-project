@@ -361,14 +361,14 @@
       <div id="form-status" role="status" aria-live="polite"></div>
     </form>
 
-    <p class="direct-contact">Prefer email? Reach us directly at <a href="mailto:readyaimai@gmail.com">readyaimai@gmail.com</a></p>
+    <p class="direct-contact">Prefer email? Reach us directly at <a href="mailto:readyaimai@gmail.com">readyaimai@gmail.com</a> or call <a href="tel:+19516751385">(951) 675-1385</a></p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>ReadyAim AI — Joshua S.C. Robinson</div>
-    <div><a href="mailto:readyaimai@gmail.com">readyaimai@gmail.com</a></div>
+    <div>&copy; <span id="year"></span> ReadyAim AI — Joshua S.C. Robinson. All rights reserved.</div>
+    <div><a href="mailto:readyaimai@gmail.com">readyaimai@gmail.com</a> &nbsp;&middot;&nbsp; <a href="tel:+19516751385">(951) 675-1385</a></div>
   </div>
 </footer>
 
@@ -376,6 +376,8 @@
   // ---- CONFIG: paste your deployed Google Apps Script Web App URL below ----
   // See SETUP-lead-capture-and-deploy.md for how to create this in ~10 minutes.
   const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyKAuODhWpuQ-dLCFfz-rUtzvtDRrTpzyKvj6EeIQwGz8pdg3iKg3e5UHhIiCSvHQtu/exec";
+
+  document.getElementById('year').textContent = new Date().getFullYear();
 
   // Mobile nav toggle
   const menuToggle = document.getElementById('menu-toggle');
