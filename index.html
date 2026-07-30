@@ -30,8 +30,9 @@
     border-bottom:1px solid #e8e2d8;
   }
   nav.wrap{display:flex; align-items:center; justify-content:space-between; padding:18px 28px;}
-  .brand{font-family:'Helvetica Neue', Arial, sans-serif; font-weight:800; font-size:22px; color:var(--teal); letter-spacing:0.02em;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:'Helvetica Neue', Arial, sans-serif; font-weight:800; font-size:22px; color:var(--teal); letter-spacing:0.02em;}
   .brand span{color:var(--terracotta);}
+  .nav-mark{width:34px; height:34px; flex-shrink:0;}
   nav .links{display:flex; gap:28px; font-family:'Helvetica Neue', Arial, sans-serif; font-size:14px; font-weight:600; align-items:center;}
   nav .links a{color:var(--ink);}
   nav .links a:hover{color:var(--terracotta);}
@@ -171,7 +172,26 @@
 
 <header>
   <nav class="wrap">
-    <div class="brand">READY<span>AIM</span> AI</div>
+    <div class="brand">
+      <svg class="nav-mark" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ReadyAim AI mark">
+        <circle cx="110" cy="110" r="62" stroke="#C99A3D" stroke-width="9" fill="none"/>
+        <g stroke="#C99A3D" stroke-width="8" stroke-linecap="round" stroke-opacity="0.45">
+          <line x1="110" y1="6" x2="110" y2="214"/>
+          <line x1="6" y1="110" x2="214" y2="110"/>
+        </g>
+        <g fill="#C99A3D">
+          <circle cx="110" cy="41" r="5"/>
+          <circle cx="110" cy="179" r="5"/>
+          <circle cx="41" cy="110" r="5"/>
+          <circle cx="179" cy="110" r="5"/>
+        </g>
+        <g stroke="#B5522E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M103,76 L71,144 M103,76 L135,144 M87,110 L119,110"/>
+          <line x1="149" y1="76" x2="149" y2="144"/>
+        </g>
+      </svg>
+      READY<span>AIM</span> AI
+    </div>
     <div class="links" id="nav-links">
       <a href="#framework">Framework</a>
       <a href="#tiers">Engagements</a>
@@ -187,18 +207,21 @@
   <div class="wrap">
     <svg class="hero-logo" viewBox="0 0 740 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ReadyAim AI logo">
       <text x="6" y="145" font-size="84" fill="#1F4E4A" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" textLength="470" lengthAdjust="spacingAndGlyphs">Ready Aim</text>
-      <g stroke="#C99A3D" stroke-width="8" stroke-linecap="round" fill="none">
-        <circle cx="630" cy="110" r="58"/>
-        <line x1="630" y1="16" x2="630" y2="40"/>
-        <circle cx="630" cy="46" r="4" fill="#C99A3D" stroke="none"/>
-        <line x1="630" y1="180" x2="630" y2="204"/>
-        <circle cx="630" cy="174" r="4" fill="#C99A3D" stroke="none"/>
-        <line x1="536" y1="110" x2="560" y2="110"/>
-        <circle cx="566" cy="110" r="4" fill="#C99A3D" stroke="none"/>
-        <line x1="700" y1="110" x2="724" y2="110"/>
-        <circle cx="694" cy="110" r="4" fill="#C99A3D" stroke="none"/>
+      <circle cx="630" cy="110" r="58" stroke="#C99A3D" stroke-width="8" fill="none"/>
+      <g stroke="#C99A3D" stroke-width="7" stroke-linecap="round" stroke-opacity="0.45">
+        <line x1="630" y1="16" x2="630" y2="204"/>
+        <line x1="536" y1="110" x2="724" y2="110"/>
       </g>
-      <text x="630" y="133" font-size="62" fill="#B5522E" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" text-anchor="middle">AI</text>
+      <g fill="#C99A3D">
+        <circle cx="630" cy="46" r="4"/>
+        <circle cx="630" cy="174" r="4"/>
+        <circle cx="566" cy="110" r="4"/>
+        <circle cx="694" cy="110" r="4"/>
+      </g>
+      <g stroke="#B5522E" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M624,78 L594,142 M624,78 L654,142 M609,110 L639,110"/>
+        <line x1="667" y1="78" x2="667" y2="142"/>
+      </g>
     </svg>
     <div class="tag">We don't sell AI. We build AI workforces.</div>
     <h1>Ready. Aim. <em>Then</em> deploy AI — never the reverse.</h1>
